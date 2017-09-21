@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c744eedb-212d-4b34-9976-a98ed10f9d74" name="Amazon" url="http://www.shubhamprakashjha.com/">
+        <fileTransfer host="35.160.229.253" port="22" privateKey="C:\Users\Shubham Prakash\Desktop\amazon\Ubuntu_amazon_shubhamprakashjha.ppk" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="4bdebd17-e54e-4272-b3d7-cd9ae177ad49" name="WAMP" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="C:\wamp64\www\shubhamprakashjha" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

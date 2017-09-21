@@ -1,0 +1,129 @@
+body{
+    background-image:url("../assets/image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.7;
+    box-shadow: inset #ffff00;
+}
+header{
+    color: black;
+    text-align: center;
+    text-decoration-style: dotted;
+    padding: 15px;
+    background: linear-gradient(90deg,rgba(255,255,255,0)0%,rgba(255,255,255,0.2)25%,rgba(255,255,255,0.2)75%,rgba(255,255,255,0)100%);
+    box-shadow: 0 0 25px rgba(0,0,0,0.1),inset 0 0 1px rgba(255,255,255,0.6);
+}
+header h1{
+    font-family: 'Barrio', cursive;
+}
+header h2, header h4{
+    font-family: 'Amatic SC', cursive;
+}
+header h4{
+    word-spacing: 3px;
+}
+nav ul{
+    background: linear-gradient(90deg,rgba(255,255,255,0)0%,rgba(255,255,255,0.2)25%,rgba(255,255,255,0.2)75%,rgba(255,255,255,0)100%);
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    align-content: center;
+    padding: 10px;
+    color: rgba(136,77,76,0.86) ;
+    font-size: 18px;
+    font-family: 'Cabin Sketch', cursive;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+article{
+    font-family: 'Indie Flower', cursive;
+    word-spacing: 3px;
+    font-size: 1.4em;
+}
+
+section{
+    padding: 15px;
+}
+aside{
+    min-width: 10em;
+    padding: 20px;
+    float: right;
+    width: 15%;
+    border:1px dashed white;
+    background: linear-gradient(90deg,rgba(255,255,255,0.2)0%,rgba(255,255,255,0.2)25%,rgba(255,255,255,0.2)75%,rgba(255,255,255,0.2)100%);
+    box-shadow: 0 0 25px rgba(0,0,0,0.1),inset 0 0 1px rgba(255,255,255,0.6);
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+footer{
+    padding: 7px;
+    text-align: center;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    background: linear-gradient(90deg,rgba(255,255,255,0)0%,rgba(255,255,255,0.2)25%,rgba(255,255,255,0.2)75%,rgba(255,255,255,0)100%);
+}
+#slide{
+    width: 98%;
+    position: relative;
+    left: 10px;
+    height: 400px;
+    opacity: 0.5;
+    box-shadow: 13px -15px 28px 0px rgba(191,184,191,1);
+}
+#prev{
+    margin-top: 200px;
+    margin-left: 3px;
+    position: absolute;
+    background: linear-gradient(90deg,rgba(255,255,255,0)0%,rgba(255,255,255,0.2)25%,rgba(255,255,255,0.2)75%,rgba(255,255,255,0)100%);
+    box-shadow: 0 0 25px rgba(0,0,0,0.1),inset 0 0 1px rgba(255,255,255,0.6);
+    color: whitesmoke;
+
+}
+
+#next{
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 200px;
+    background: linear-gradient(90deg,rgba(255,255,255,0)0%,rgba(255,255,255,0.2)25%,rgba(255,255,255,0.2)75%,rgba(255,255,255,0)100%);
+    box-shadow: 0 0 25px rgba(0,0,0,0.1),inset 0 0 1px rgba(255,255,255,0.6);
+    color: white;
+
+}
+
+div#table{
+    min-height: 35em;
+    background: linear-gradient(90deg,rgba(255,255,255,0.8)0%,rgba(255,255,255,0.5)25%,rgba(255,255,255,0.3)75%,rgba(255,255,255,0.0)100%);
+    box-shadow: 0 0 25px rgba(0,0,0,0.1),inset 0 0 1px rgba(255,255,255,0.6);
+    padding: 50px;
+}
+div#innerTable{
+    border: 2px dashed white;
+    padding: 10px;
+    width: 300px;
+}
+.adv1{
+    background: linear-gradient(90deg,rgba(255,255,255,0.8)0%,rgba(255,255,255,0.5)25%,rgba(255,255,255,0.1)75%,rgba(255,255,255,0)100%);
+    box-shadow: 0 0 25px rgba(0,0,0,0.1),inset 0 0 1px rgba(255,255,255,0.6);
+
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.adv2{
+    background: linear-gradient(90deg,rgba(255,255,255,0.2)0%,rgba(255,255,255,0.3)25%,rgba(255,255,255,0.6)75%,rgba(255,255,255,0.8)100%);
+    box-shadow: 0 0 25px rgba(0,0,0,0.1),inset 0 0 1px rgba(255,255,255,0.6);
+
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.adv1 a,.adv2 a{
+    text-decoration: none;
+    color: rgba(136,77,76,0.86) ;
+}
+

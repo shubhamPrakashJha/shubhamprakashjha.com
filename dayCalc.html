@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shubham Prakash Jha</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="jquery-3.1.1.js"></script>
+    <style>
+        div#table{
+            min-height: 35em;
+            background: linear-gradient(90deg,rgba(255,255,255,0.8)0%,rgba(255,255,255,0.5)25%,rgba(255,255,255,0.3)75%,rgba(255,255,255,0.0)100%);
+            box-shadow: 0 0 25px rgba(0,0,0,0.1),inset 0 0 1px rgba(255,255,255,0.6);
+            padding: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+<div>
+    <header><h1> WEEK DAY CALCULATOR</h1>
+        <h2>Do you remember which day of the week you were born?</h2>
+        <h4>"Now you don't have to open the calender,for that just give the date and you will get the day"</h4>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <!--<li><a href="">Blog</a></li>-->
+            <!--<li><a href="">Skills</a></li>-->
+            <li><a href="projects.html">Projects</a></li>
+            <!--<li><a href="">Awards</a></li>-->
+            <li><a href="aboutMe.html">About me</a></li>
+
+        </ul>
+    </nav>
+
+
+
+    <article>
+        <section>by Shubham Prakash Jha</section>
+        <section class="a">
+            <aside> <h1>ABOUT dayGen:</h1> Do you remember which day of the weelk you were born on OR if your next special day is sunday or not? <br>
+                Are you opening your calender on your phone or PC?<br>
+                <br>Now you don't , just input your special dates and find out.
+
+            </aside>
+
+
+            <div id="table" style="height: 100%">
+                <p id="intro"></p>
+                <p>Enter DD :<input type="number" id="dd" name="dday" value="" autofocus></p>
+                <p>Enter MM:<input type="number" id="mm" name="mmonth" value="" autofocus></p>
+                <p>Enter YYYY:<input type="number" id="yyyy" name="yyear" value="" autofocus></p>
+                <input type="submit" id="submit" name="submit" value="Generate" onclick="return dayGen()"></p>
+
+                <div id="innerTable" >
+
+                </div>
+            </div>
+        </section>
+
+    </article>
+    <footer> &copy; 2016 - 2017 shubhamprakashjha.com</footer>
+
+    <script>
+        function dayGen() {
+
+            document.getElementById("innerTable").innerHTML = "";
+            var day = document.getElementById("dd").value;
+
+            var month = document.getElementById("mm").value -1;
+            var year = document.getElementById("yyyy").value;
+
+            var myDate = new Date(year, month, day);
+            var myval = myDate.getDay();
+            switch (myval) {
+                case 0:
+                    var diw = "sunday";
+                    break;
+                case 1:
+                    var diw = "monday";
+                    break;
+                case 2:
+                    var diw = "tuesday";
+                    break;
+                case 3:
+                    var diw = "wednesday";
+                    break;
+                case 4:
+                    var diw = "thursday";
+                    break;
+                case 5:
+                    var diw = "friday";
+                    break;
+                case 6:
+                    var diw = "saturday";
+                    break;
+                default:
+                    alert("error");
+            }
+            var weekDay = "you were born on " + diw;
+            var myElement = document.getElementById("innerTable");
+            var myNewElement = document.createElement("p");
+            var myText = document.createTextNode(weekDay);
+            myNewElement.appendChild(myText);
+            myElement.appendChild(myNewElement);
+        }
+    </script>
+</div>
+</body>
+
+</html>

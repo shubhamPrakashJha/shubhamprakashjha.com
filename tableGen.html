@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shubham Prakash Jha</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="jquery-3.1.1.js"></script>
+    <style>
+        div#table{
+            min-height: 35em;
+            background: linear-gradient(90deg,rgba(255,255,255,0.8)0%,rgba(255,255,255,0.5)25%,rgba(255,255,255,0.3)75%,rgba(255,255,255,0.0)100%);
+            box-shadow: 0 0 25px rgba(0,0,0,0.1),inset 0 0 1px rgba(255,255,255,0.6);
+            padding: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+<div>
+    <header><h1> MULTIPLICATION TABLE GENERATOR</h1>
+        <h2>create table for any possible number and till anywhere you want</h2>
+        <h4>"generate table till you can possibly imagine"</h4>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <!--<li><a href="">Blog</a></li>-->
+            <!--<li><a href="">Skills</a></li>-->
+            <li><a href="projects.html">Projects</a></li>
+            <!--<li><a href="">Awards</a></li>-->
+            <li><a href="aboutMe.html">About me</a></li>
+
+        </ul>
+    </nav>
+
+
+
+    <article>
+        <section>by Shubham Prakash Jha</section>
+        <section class="a">
+            <aside> <h1>ABOUT TableGen:</h1>  A Powerful table generator which can generate multiplication table for a much larger no. that u can generate wid the help of a normal calculator<br><br><br>
+
+               <P> DISCLAIMER: A VERY LARGE NO. MIGHT SLOW DOWN YOUR PAGE</P>
+            </aside>
+
+
+            <div id="table" style="height: 100%">
+                <p id="intro"></p>
+                    <p>Enter The No. :<input type="number" id="num" name="tableNum" value="" autofocus></p>
+                    <p>Enter The Range :<input type="number" id="rng" name="tableRng" value="" autofocus></p>
+                    <p><input type="submit" id="submit" name="submit" value="Generate" onclick="return mulTable()"></p>
+
+                <div id="innerTable" >
+
+                </div>
+            </div>
+        </section>
+
+    </article>
+    <footer> &copy; 2016 - 2017 shubhamprakashjha.com</footer>
+
+    <script>
+        function mulTable() {
+
+
+            var x = document.getElementById("num").value;
+            var y = document.getElementById("rng").value;
+
+
+            function mul(a, b) {
+                var z = a * b;
+                var msg = x + " * " + n + " = " + z;
+                var myElement = document.getElementById("innerTable");
+                var myNewElement = document.createElement("p");
+                var myText = document.createTextNode(msg);
+                document.getElementById("intro").innerHTML = "TABLE OF " + x + " :";
+                myNewElement.appendChild(myText);
+                myElement.appendChild(myNewElement);
+            }
+
+            document.getElementById("innerTable").innerHTML = "";
+            for (var n = 1; n <= y; n++) {
+                mul(x, n);
+            }
+        }
+
+
+
+
+
+    </script>
+</div>
+</body>
+
+</html>

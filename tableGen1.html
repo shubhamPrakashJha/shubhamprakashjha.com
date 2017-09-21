@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shubham Prakash Jha</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="jquery-3.1.1.js"></script>
+
+</head>
+
+<body>
+<div>
+    <header><h1> MULTIPLICATION TABLE GENERATOR</h1>
+        <h2>create table for any possible number and till anywhere you want</h2>
+        <h4>"generte tatle till you can possibly imagine"</h4>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="tableGen.html">Projects</a></li>
+            <li><a href="">Awards</a></li>
+            <li><a href="">About me</a></li>
+
+        </ul>
+    </nav>
+
+
+
+    <article>
+        <section>by Shubham Prakash Jha</section>
+        <section class="a">
+            <aside> <h1>About Table Gen:</h1>  A Powerfull table generator which can genertae multiplication table for a much larger no. that u can generaate wid the help of a normal calculator<br><br><br>
+
+               <P> DISCLAIMER: A VERY LARGE NO. MIGHT SLOW DOWN YOUR PAGE</P>
+            </aside>
+
+
+            <div id="table" style="height: 100%">
+                <p id="intro"></p>
+
+            </div>
+        </section>
+
+    </article>
+    <footer> &copy; 2016 - 2017 shubhamprakashjha.com</footer>
+
+    <script>
+        function mulTable() {
+
+
+            var x = prompt("ENTER THE NO. FOR TABLE");
+            var y = prompt("TILL WHERE U WANT TO CALCULATE THE TABLE");
+
+
+            function mul(a, b) {
+                var z = a * b;
+                var msg = x + " * " + n + " = " + z;
+                var myElement = document.getElementById("table");
+                var myNewElement = document.createElement("p");
+                var myText = document.createTextNode(msg);
+                document.getElementById("intro").innerHTML = "TABLE OF "+x+" :";
+                myNewElement.appendChild(myText);
+                myElement.appendChild(myNewElement);
+            }
+
+            for (n = 1; n <= y; n++) {
+                mul(x, n);
+            }
+        }
+
+        window.onload = function () {
+            mulTable();
+        };
+
+
+
+    </script>
+</div>
+</body>
+
+</html>
