@@ -17,7 +17,7 @@
     }
 
     function prev() {
-        var slider = $('slide');
+        var slider = document.getElementById('slide');
         num--;
         if(num<0){
             num = images.length-1;
